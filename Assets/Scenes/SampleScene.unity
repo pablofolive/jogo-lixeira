@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 1372548737}
   - component: {fileID: 1372548736}
   - component: {fileID: 1372548740}
+  - component: {fileID: 1372548741}
   m_Layer: 0
   m_Name: Lixeira
   m_TagString: Untagged
@@ -412,6 +413,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 0.1
+--- !u!114 &1372548741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372548735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3538dc8bc4b685348ba0b476e18ce02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2036866293
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +436,7 @@ GameObject:
   - component: {fileID: 2036866295}
   - component: {fileID: 2036866294}
   m_Layer: 0
-  m_Name: lixospawner
+  m_Name: LixoSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -444,7 +457,7 @@ MonoBehaviour:
   maximumX: 10
   fixedY: 8
   fixedZ: 0
-  timer: 1e-11
+  timer: 1
   Lixo: {fileID: 6506860534168531222, guid: ee922514f996e0a4994516aa174bcb2e, type: 3}
   MaxPoints: 1
   points: 0
