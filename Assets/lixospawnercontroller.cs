@@ -13,10 +13,12 @@ public class lixospawnercontroller : MonoBehaviour
     public int points = 0;
 
     public TMP_Text pointsText;
+    public TMP_Text victoryText;
 
     void Start()
     {
         StartCoroutine(SpawnRoutine());
+        victoryText.gameObject.SetActive(false);
     }
 
 
@@ -37,6 +39,7 @@ public class lixospawnercontroller : MonoBehaviour
         
             yield return new WaitForSeconds(timer);
         }
+        victoryText.gameObject.SetActive(true);
     }
     public void AddToPoints(int value)
     {
