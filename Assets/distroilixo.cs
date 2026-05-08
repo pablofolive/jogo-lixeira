@@ -12,7 +12,9 @@ public class distroilixo : MonoBehaviour
         if (collision.gameObject.CompareTag("Lixo"))
         {
             Destroy(collision.gameObject);
-            pontuacao.AddToPoints(-1);
+            if (pontuacao.points > 0) {
+                pontuacao.AddToPoints(-1);
+            }
             
         }
     }
